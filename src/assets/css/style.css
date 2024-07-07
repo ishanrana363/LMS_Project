@@ -1,3 +1,8 @@
+body {
+  background-color: rgb(228, 238, 243) !important ;
+}
+
+
 .animated-button {
     padding: 10px 20px;
     font-size: 16px;
@@ -75,9 +80,11 @@
 
 .menubar .menuList ul.open{
   margin-left: 0px;
+  transition: all .4s ease-in-out;
 }
 .menubar .menuList ul.close{
   margin-left: -3000px;
+  transition: all .4s ease-in-out;
 }
 
 
@@ -213,4 +220,39 @@
 }
 
   
+}
+
+.beforeText .btn {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.animated-btn1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: black;
+    }
+    100% {
+        background-color: red;
+    }
 }

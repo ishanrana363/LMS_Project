@@ -58,7 +58,7 @@ const Header = () => {
                           fontSize:"17px"
                         }} 
                           type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Login">
-                          <NavLink className="nav-link"   to="">Login</NavLink>
+                          <NavLink className="nav-link"   to="/login">Login</NavLink>
                       </button>
                       
                     </span>
@@ -71,7 +71,7 @@ const Header = () => {
                             fontSize:"17px",
                           }} 
                             type="button" className="btn animated-button " data-bs-toggle="tooltip" data-bs-placement="top" title="Registration">
-                            <NavLink className="nav-link"   to="">Registration</NavLink>
+                            <NavLink className="nav-link"   to="/registration">Registration</NavLink>
                         </button>
                     </span>
                     <span className='mx-3' >
