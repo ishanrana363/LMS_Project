@@ -20,3 +20,197 @@
       box-shadow: 0 0 5px #007BFF;
     }
   }
+
+  .header{
+    background-color: hsl(120, 49%, 92%);
+  }
+  .menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-right: 60px;
+}
+
+.menubar .menuList ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.menubar .menuList ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    list-style-type: none;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 5px;
+    
+}
+.menubar .menuList ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.toggle button {
+  border: none;
+  outline: none;
+  font-size: 30px;
+  background-color: hsl(120, 49%, 92%);
+  margin-bottom: 5px;
+}
+.toggle button:hover{
+  background-color: hsl(120, 49%, 92%);
+  transform: scale(0.6);
+  transition: all 0.10s;
+  outline: none;
+
+}
+
+.toggle{
+  display: none;
+}
+
+.menubar .menuList ul.open{
+  margin-left: 0px;
+}
+.menubar .menuList ul.close{
+  margin-left: -3000px;
+}
+
+
+@media (max-width:570px){
+  .menubar .menuList ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      transition: all .05s ease-in-out ;
+      left: 200px;
+      margin-top: 30px;
+      width: 200px;
+      height: 300px;
+      background-color: rgb(235, 202, 202);
+      padding: 20px;
+      margin-left: -3000px;
+  }
+  .toggle{
+      display: block;
+      
+  }
+  .toggle button:hover{
+    background-color: hsl(120, 49%, 92%);
+    transform: scale(0.6);
+    transition: all 2s ease-in-out ;
+    outline: none;
+  
+  }
+}
+@media (max-width:768px){
+  .menubar .menuList ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      transition: all .05s ease-in-out ;
+      left: 200px;
+      margin-top: 30px;
+      width: 200px;
+      height: 300px;
+      background-color: rgb(235, 202, 202);
+      padding: 20px;
+      margin-left: -3000px;
+  }
+  .toggle{
+      display: block;
+      
+  }
+  .toggle button:hover{
+    background-color: hsl(120, 49%, 92%);
+    transform: scale(0.6);
+    transition: all 2s ease-in-out ;
+    outline: none;
+  
+  }
+}
+
+@media (max-width:992px){
+  .menubar .menuList ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      transition: all .05s ease-in-out ;
+      left: 200px;
+      margin-top: 30px;
+      width: 200px;
+      height: 300px;
+      background-color: rgb(235, 202, 202);
+      padding: 20px;
+      margin-left: -3000px;
+  }
+  .toggle{
+      display: block;
+      
+  }
+  .toggle button:hover{
+    background-color: hsl(120, 49%, 92%);
+    transform: scale(0.6);
+    transition: all 2s ease-in-out ;
+    outline: none;
+  
+  }
+}
+
+
+@media (max-width:1024){
+  .menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-right: 60px;
+}
+
+.menubar .menuList ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.menubar .menuList ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    list-style-type: none;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 5px;
+    
+}
+.menubar .menuList ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.toggle button {
+  border: none;
+  outline: none;
+  font-size: 30px;
+  background-color: hsl(120, 49%, 92%);
+  margin-bottom: 5px;
+}
+.toggle button:hover{
+  background-color: hsl(120, 49%, 92%);
+  transform: scale(0.6);
+  transition: all 0.10s;
+  outline: none;
+
+}
+
+.toggle{
+  display: none;
+}
+
+  
+}
