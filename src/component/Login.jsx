@@ -18,7 +18,7 @@ function Login() {
         }}
         >You can login email and phone number</h3>
       </div>
-      <Nav className='mt-5'
+      <Nav className='mt-3'
       style={{
         display:"flex",
         justifyContent:"center"
