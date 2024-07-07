@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const EmailLogin = () => {
   return (
     <>
-        <div className="container mt-4 ">
+        <div className="container footer mt-4 ">
             <div className="row justify-content-center ">
                 <div className="col-md-7 col-lg-6 ">
                     <div style={{boxShadow:" 0 4px 8px rgba(0, 0, 0, 0.2)"}} className="card w-90 p-4">
