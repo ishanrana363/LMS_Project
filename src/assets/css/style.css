@@ -273,6 +273,16 @@ body {
     font-weight: 600;
     display: block;
 }
+.courseCard{
+    height: 550px !important;
+    background-color: red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
-
-
+.courseCard a {
+    text-decoration: none;
+}
+.courseCard:hover{
+    transform: scale(1.05);
+    transition: all 1s ease-in-out;
+}
