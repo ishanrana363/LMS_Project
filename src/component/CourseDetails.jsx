@@ -4,6 +4,9 @@ import { FaRegClock } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { FaStar } from "react-icons/fa";
 import Tab from 'react-bootstrap/Tab';
+import Accordion from 'react-bootstrap/Accordion';
+import { FaCirclePlay } from "react-icons/fa6";
+
 import Tabs from 'react-bootstrap/Tabs';
 const CourseDetails = () => {
     return (
@@ -132,14 +135,105 @@ const CourseDetails = () => {
                                                 </li>
                                             </ul>
                                         </Tab>
-                                        <Tab eventKey="profile" title="Curriculum">
-                                            Tab content for Profile
+                                        <Tab eventKey="Curriculum" title="Curriculum">
+                                            <Accordion defaultActiveKey="0">
+                                                <Accordion.Item eventKey="0">
+                                                    <Accordion.Header>Getting started this lesson <span style={{marginLeft:"100px",display:"block",color:"gray"}} className={""} >8 Lesson | 18:50:32 Hours </span> </Accordion.Header>
+                                                    <Accordion.Body>
+                                                        <div className={"videoData"}>
+                                                            <p><FaCirclePlay/> What is wordpress <span
+                                                                style={{marginLeft: "305px"}}>00:01:22</span></p>
+                                                            <p>
+                                                                <FaCirclePlay/> Code The Basic Webpage Layout <span
+                                                                style={{marginLeft: "200px"}}>00:01:22</span>
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> Setting Up Your Project
+                                                                Environment <span
+                                                                style={{marginLeft: "169px"}}>06:06:55</span>
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> Universal Lesson
+                                                                <span style={{marginLeft: "325px"}}>00:04:33</span>
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> HTML 5
+                                                                <span style={{marginLeft: "391px"}}>00:04:33</span>
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> Welcome To The Course!
+                                                                You Made The Right Decision <span style={{marginLeft: "35px"}} >02:04:20</span>
+                                                            </p>
+                                                            <p><FaCirclePlay/> What is Bootstrap? <span
+                                                                style={{marginLeft: "305px"}}>02:04:20</span></p>
+                                                        </div>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="1">
+                                                    <Accordion.Header>Iframe selection<span style={{marginLeft:"173px",display:"block",color:"gray"}} className={""} >8 Lesson | 18:50:32 Hours </span> </Accordion.Header>
+                                                    <Accordion.Body>
+                                                        <div className={"videoData"}>
+                                                            <p>
+                                                                <FaCirclePlay/> Google Doc
+                                                                <span style={{marginLeft: "330px"}}>06:06:55</span>
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> Google PDF
+                                                                <span style={{marginLeft: "330px"}}>06:06:55</span>
+                                                            </p>
+
+                                                            <p>
+                                                                <FaCirclePlay/> Google Slide
+                                                                <span style={{marginLeft: "323px"}}>06:06:55</span>
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> Google Sheets
+                                                                <span style={{marginLeft: "310px"}}>06:06:55</span>
+                                                            </p>
+
+                                                            <p>
+                                                                <FaCirclePlay/> Google Map
+                                                                <span style={{marginLeft: "328px"}}>06:06:55</span>
+                                                            </p>
+
+                                                        </div>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="2">
+                                                    <Accordion.Header>Wordpress Theame Setup<span style={{marginLeft:"103px",display:"block",color:"gray"}} className={""} >8 Lesson | 5:50:32 Hours </span> </Accordion.Header>
+                                                    <Accordion.Body>
+                                                        <div className={"videoData"}>
+                                                            <p>
+                                                                <FaCirclePlay/> Download the latest version of Wordpress
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> Install Wordpress On Your Local Machine
+                                                                <span style={{marginLeft: "113px"}}>06:06:55</span>
+                                                            </p>
+                                                        </div>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="3">
+                                                    <Accordion.Header>The final details<span style={{marginLeft:"174px",display:"block",color:"gray"}} className={""} >8 Lesson | 5:50:32 Hours </span> </Accordion.Header>
+                                                    <Accordion.Body>
+                                                        <div className={"videoData"}>
+                                                            <p>
+                                                                <FaCirclePlay/> Track Your Visitors With Google Analytics
+                                                            </p>
+                                                            <p>
+                                                                <FaCirclePlay/> Information Architecture
+                                                            </p>
+                                                        </div>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                            </Accordion>
                                         </Tab>
-                                        <Tab eventKey="contact" title=" Instructor" >
-                                            Tab content for Contact
+                                        <Tab eventKey="contact" title=" Instructor">
+
+
                                         </Tab>
 
-                                        <Tab eventKey="Review" title=" Review" >
+                                        <Tab eventKey="Review" title=" Review">
                                             Tab content for Contact
                                         </Tab>
                                     </Tabs>
