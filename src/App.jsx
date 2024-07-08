@@ -1,14 +1,11 @@
-import React from 'react'
-import Header from './component/layout/Header'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import "../src/assets/css/app.css"
-import Layout from './component/layout/Layout'
-import Registration from './component/Registration'
 import RegistrationPage from './pages/RegistrationPage'
 import LoginPage from './pages/LoginPage'
 import EmailLoginPage from './pages/EmailLoginPage'
 import PhoneLoginPage from "./pages/PhoneLoginPage.jsx";
 import Homepage from "./pages/Homepage.jsx";
+import CourseDetailsPage from "./pages/CourseDetailsPage.jsx";
 
 const App = () => {
   return (
@@ -20,6 +17,7 @@ const App = () => {
           <Route path='/login' element = {<LoginPage/>} />
           <Route path='/email' element = { <EmailLoginPage/> } />
           <Route path="/phone" element = { <PhoneLoginPage/> } />
+          <Route path={"/courses-details"} element={<CourseDetailsPage/>} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -55,7 +55,7 @@ function Course() {
                         <div key={i}>
                             <div className={"card courseCard w-auto mx-2 rounded-3 "} >
                                 <div className={"card-body  p-3 "} >
-                                    <Link to={`/courses-details/${item.id}`}>
+                                    <Link to={`/courses-details`}>
                                         <div className={"imgBtn   "}>
                                             <div className={"imgData  "}>
                                                 <img width={"100%"} height={"200px"}  src={item.img}/>

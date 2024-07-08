@@ -286,3 +286,34 @@ body {
     transform: scale(1.05);
     transition: all 1s ease-in-out;
 }
+
+.cardBody h3 {
+    font-weight: 600;
+    color: black;
+}
+.cardBody h6 {
+    font-weight: bolder;
+    color: rgba(74, 71, 71, 0.69);
+    font-size: 17px;
+}
+
+.cardBody p{
+    margin-top: 15px;
+    color: darkgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
