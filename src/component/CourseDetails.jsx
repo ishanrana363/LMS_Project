@@ -6,8 +6,14 @@ import { FaStar } from "react-icons/fa";
 import Tab from 'react-bootstrap/Tab';
 import Accordion from 'react-bootstrap/Accordion';
 import { FaCirclePlay } from "react-icons/fa6";
-
+import instructor1 from "../assets/img/instructor1.png";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import instructor2 from "../assets/img/instructor2.jpg";
+import instructor3 from "../assets/img/instructor3.jpg";
 import Tabs from 'react-bootstrap/Tabs';
+import {Link} from "react-router-dom";
 const CourseDetails = () => {
     return (
         <>
@@ -51,7 +57,7 @@ const CourseDetails = () => {
                 <div className={"container mt-5 "}>
                     <div className={"row"}>
                         <div className={"col-md-6 col-sm-12 "}>
-                            <div className={"card p-5  rounded-4  "} style={{width:"45rem"}} >
+                            <div className={"card p-5  rounded-4  "} style={{width:"50rem"}} >
                                 <div className={"card-body cardBody "} >
                                     <Tabs
                                         defaultActiveKey="Overview"
@@ -228,9 +234,93 @@ const CourseDetails = () => {
                                                 </Accordion.Item>
                                             </Accordion>
                                         </Tab>
-                                        <Tab eventKey="contact" title=" Instructor">
-
-
+                                        <Tab eventKey="instructor" title=" Instructor">
+                                            <div className={"row"}>
+                                                <div className={"col-4"}>
+                                                    <img width={"80%"} style={{borderRadius: "15px"}}
+                                                         src={instructor1}/>
+                                                </div>
+                                                <div className={"col-8"}>
+                                                    <h6>John Doe</h6>
+                                                    <p>Adobe Certified Instructor & Adobe Certified Expert</p>
+                                                    <span>Sharing is who I am, and teaching is where I am at my best,
+                                                        because I've been on both sides of that equation, and getting to</span>
+                                                    <br/>
+                                                    <Link title={"Facebook"} className={""} to={""}>
+                                                        <button className={"btn border mt-3 faceBook "}><FaFacebookF/>
+                                                        </button>
+                                                    </Link>
+                                                    <Link title={"Twitter"} className={"mx-2"} to={""}>
+                                                        <button className={"btn border mt-3 "}><FaTwitter/></button>
+                                                    </Link>
+                                                    <Link title={"Linkedin"} className={"mx-2"} to={""}>
+                                                        <button className={"btn border mt-3 "}><CiLinkedin/></button>
+                                                    </Link>
+                                                    <Link title={"Profile"} className={"mx-2"} to={"/profile"}>
+                                                        <button
+                                                            className={"btn btn-primary profileBtn border mt-3 "}>View
+                                                            Profile
+                                                        </button>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                            <div className={"row mt-5 "}>
+                                                <div className={"col-4"}>
+                                                    <img width={"80%"} style={{borderRadius: "15px"}}
+                                                         src={instructor2}/>
+                                                </div>
+                                                <div className={"col-8"}>
+                                                    <h6>Kasia Jarco</h6>
+                                                    <p>Teaches courses at the post-secondary level.</p>
+                                                    <p>Kasia Jarco is a dedicated and passionate educator, currently serving as
+                                                        a Javascript Understanding the Weird  Instructor at</p>
+                                                    <br/>
+                                                    <Link title={"Facebook"} className={""} to={""}>
+                                                        <button className={"btn border mt-3 faceBook "}><FaFacebookF/>
+                                                        </button>
+                                                    </Link>
+                                                    <Link title={"Twitter"} className={"mx-2"} to={""}>
+                                                        <button className={"btn border mt-3 "}><FaTwitter/></button>
+                                                    </Link>
+                                                    <Link title={"Linkedin"} className={"mx-2"} to={""}>
+                                                        <button className={"btn border mt-3 "}><CiLinkedin/></button>
+                                                    </Link>
+                                                    <Link title={"Profile"} className={"mx-2"} to={"/profile"}>
+                                                        <button
+                                                            className={"btn btn-primary profileBtn border mt-3 "}>View
+                                                            Profile
+                                                        </button>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                            <div className={"row mt-5 "}>
+                                                <div className={"col-4"}>
+                                                    <img width={"80%"} style={{borderRadius: "15px"}}
+                                                         src={instructor3}/>
+                                                </div>
+                                                <div className={"col-8"}>
+                                                    <h6>Mathew Anderson</h6>
+                                                    <p>Meet Mathew, an innovative and passionate developer.</p>
+                                                    <p>Meet Mathew Anderson, an innovative and passionate developer who
+                                                        navigates the ever-evolving landscape of technology with</p>
+                                                    <Link title={"Facebook"} className={""} to={""}>
+                                                        <button className={"btn border mt-3 faceBook "}><FaFacebookF/>
+                                                        </button>
+                                                    </Link>
+                                                    <Link title={"Twitter"} className={"mx-2"} to={""}>
+                                                        <button className={"btn border mt-3 "}><FaTwitter/></button>
+                                                    </Link>
+                                                    <Link title={"Linkedin"} className={"mx-2"} to={""}>
+                                                        <button className={"btn border mt-3 "}><CiLinkedin/></button>
+                                                    </Link>
+                                                    <Link title={"Profile"} className={"mx-2"} to={"/profile"}>
+                                                        <button
+                                                            className={"btn btn-primary profileBtn border mt-3 "}>View
+                                                            Profile
+                                                        </button>
+                                                    </Link>
+                                                </div>
+                                            </div>
                                         </Tab>
 
                                         <Tab eventKey="Review" title=" Review">
