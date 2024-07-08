@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer">
         <div className={"container"} >
             <div className={"row"}>
-                <div className={"col-md-4 col-sm-12 "}>
+                <div className={"col-md-3 col-sm-12 "}>
                     <div className={"img mt-4 "}>
                         <img width={"60%"} src={img} alt={""}/>
                     </div>
@@ -51,9 +51,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={"col-md-3 col-sm-12"}>
-                    <div className={"supportArea"}>
 
-                    </div>
                 </div>
             </div>
         </div>
